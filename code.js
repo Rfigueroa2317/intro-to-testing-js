@@ -12,12 +12,15 @@ function helloWorld() {
 
 // .1a sayHello
 
-function sayHello(){
+function sayHello(input){
+    if(input === "Alex"){
+        return "Hello, " + "input" + "!"
+     }else if(input === "Pat"){
+        return 'Hello, Pat!';
+    }else{
+        return 'Hello, Jane!';
+    }
+
 
 }
 
-// .1b sayHello
-
-function sayHello(){
-
-}

@@ -1,4 +1,5 @@
 // Unit tests for the helloWorld function
+
 describe('helloWorld', function() {
     it('should be a defined function', function() {
       expect(typeof helloWorld).toBe('function');
@@ -14,14 +15,24 @@ describe('helloWorld', function() {
     });
 });
 
-describe('sayHello', function(){
+// .0
+
+describe( 'sayHello', function(){
     it("should be a defined function", function (){
         expect(typeof sayHello).toBe('function');
     });
+    it("should return a string when called", function(){
+        expect(typeof sayHello()).toBe("string")
+    });
+    it("should return 'Hello, Jane', when passing 'Jane'",function(){
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
+    });
+    it("should return 'Hello, Alex', when passing 'Alex'",function(){
+        expect(sayHello("Alex")).toBe("Hello, Alex!");
+    });
+    it("should return 'Hello, Pat' when passing 'Pat'",function(){
+        expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
+
 })
 
-describe('sayHello', function(){
-    it("should be a defined function", function(){
-        expect(typeof sayHello).toBe('function');
-    });
-});
